@@ -210,7 +210,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Datatables' => \Yajra\DataTables\Facades\DataTables::class,
-        
+
 
     ],
 
