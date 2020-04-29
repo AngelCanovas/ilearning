@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * App\Course
@@ -42,7 +43,19 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Course extends Model
 {
+    use softDeletes;
+
     const PUBLISHED = 1;
     const PENDING = 2;
     const REJECTED = 3;
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+    public function goals()
+    {
+        return $this->hasMany(Goals::class)->select('id', 'course_id', 'goal');
+    }
 }

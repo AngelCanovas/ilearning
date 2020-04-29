@@ -33,6 +33,6 @@ class UsersTableSeeder extends Seeder
         factory(User::class, 10)->create()->each(function (User $u){
             factory(Teacher::class, 1)->create(['user_id' => $u->id]);
             factory(Student::class, 1)->create(['user_id' => $u->id]);
-        })
+        });
     }
 }
