@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Authentication Language Lines
@@ -13,13 +12,13 @@ return [
     |
     */
 
-    'failed' => 'These credentials do not match our records.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+    'failed'   => 'Estas credenciales no coinciden con nuestros registros.',
+    'throttle' => 'Demasiados intentos de acceso. Por favor intente nuevamente en :seconds segundos.',
 
-    'socialite' => 'Login with Socialite',
+    'socialite' => 'Autentificacion mediante redes sociales',
     'github'    => 'Github',
     'facebook'  => 'Facebook',
-    'social_denied' => 'Login denied',
-    'info_message'  => 'Information message',
+    'social_denied' => 'Inicio de sesion cancelado',
+    'info_message'  => 'Mensaje informativo',
 
 ];
